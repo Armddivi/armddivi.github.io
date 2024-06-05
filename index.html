@@ -1,72 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title> LOTUSE BOYES </title>
 <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gold Price</title>
-    <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-        {
-        "symbols": [
-          {
-            "description": "",
-            "proName": "OANDA:XAUUSD"
-          },
-          {
-            "description": "",
-            "proName": "FX_IDC:EURAED"
-          },
-          {
-            "description": "",
-            "proName": "FX:EURUSD"
-          },
-          {
-            "description": "",
-            "proName": "FX_IDC:CADAED"
-          },
-          {
-            "description": "",
-            "proName": "FX_IDC:EURAED"
-          }
-        ],
-        "showSymbolLogo": true,
-        "isTransparent": false,
-        "displayMode": "adaptive",
-        "colorTheme": "dark",
-        "locale": "en"
-      }
-        </script>
-
-        
-        
-       
-      </div>
-      <hr size="15px" color="darkgreen" />
-      
+    <title>LOTUSE BOYES</title>
     <style>
         body {
-          
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-           
-            
+            background-color: #121212;
+            color: #fff;
         }
-        
-         hr{
-          display: grid;
-            size: 50px;
-            width: 100%;
 
-          }
-        
-      
+        hr {
+            width: 100%;
+            height: 15px;
+            background-color: darkgreen;
+            border: none;
+        }
+
         .container {
-          
             max-width: 1200px;
             margin: 20px auto;
             padding: 0 20px;
@@ -74,150 +29,167 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-        
+
         .widget {
-           
-          
-            position: relative;
-            padding: 2px;
-            margin: -25px;
-            right: 15%;
-            top: 25px;
-            max-width: 600px; /* Limiting the width for better layout */
-            flex: 1; /* Distribute space evenly */
+            padding: 10px;
+            flex: 1 1 100%;
+            box-sizing: border-box;
         }
+
         .widget2 {
-          
-          
-          position: relative;
-          padding: 2px;
-            margin: -25px;
-            left: 58%;
-            top: 5px;
-            max-width: 600px; /* Limiting the width for better layout */
-            flex: 1; 
+            padding: 10px;
+            flex: 1 1 100%;
+            box-sizing: border-box;
         }
-        
+
         .center-widget {
-          
             text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .widget {
+                flex: 1 1 50%;
+            }
+
+            .widget2 {
+                flex: 1 1 50%;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+            "symbols": [
+                {
+                    "description": "",
+                    "proName": "OANDA:XAUUSD"
+                },
+                {
+                    "description": "",
+                    "proName": "FX_IDC:EURAED"
+                },
+                {
+                    "description": "",
+                    "proName": "FX:EURUSD"
+                },
+                {
+                    "description": "",
+                    "proName": "FX_IDC:CADAED"
+                },
+                {
+                    "description": "",
+                    "proName": "FX_IDC:EURAED"
+                }
+            ],
+            "showSymbolLogo": true,
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "colorTheme": "dark",
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <hr />
+
     <div class="container">
-        <!-- TradingView Market Ticker Widget -->
         <div class="widget">
-          <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "950",
-  "height": "700",
-  "symbol": "OANDA:XAUUSD",
-  "interval": "D",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "allow_symbol_change": true,
-  "calendar": false,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-        </div>
-        <!-- TradingView Gold Price Quote Widget -->
-         <div class="center">
-        <div class="widget2">
-            <h2></h2>
-            
+            <!-- TradingView Widget BEGIN -->
             <div class="tradingview-widget-container">
                 <div class="tradingview-widget-container__widget"></div>
-                
-                </div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                    "width": "100%",
+                    "height": "500",
+                    "symbol": "OANDA:XAUUSD",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "en",
+                    "allow_symbol_change": true,
+                    "calendar": false,
+                    "support_host": "https://www.tradingview.com"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+        <div class="widget2">
+            <!-- TradingView Widgets -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
                 <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
                 {
                     "symbol": "OANDA:XAUUSD",
-                    "width": 430,
+                    "width": "100%",
                     "isTransparent": false,
                     "colorTheme": "dark",
                     "locale": "en"
                 }
                 </script>
-                <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-    {
-    "symbol": "FX_IDC:GBPAED",
-    "width": 430,
-    "isTransparent": false,
-    "colorTheme": "dark",
-    "locale": "en"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
-                <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-    {
-    "symbol": "FX_IDC:CADAED",
-    "width": 430,
-    "isTransparent": false,
-    "colorTheme": "dark",
-    "locale": "en"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
-                <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-    {
-    "symbol": "FX:EURUSD",
-    "width": 430,
-    "isTransparent": false,
-    "colorTheme": "dark",
-    "locale": "en"
-  }
-    </script>
-    <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-  {
-  "interval": "1m",
-  "width": 430,
-  "isTransparent": false,
-  "height": 220,
-  "symbol": "OANDA:XAUUSD",
-  "showIntervalTabs": true,
-  "displayMode": "single",
-  "locale": "en",
-  "colorTheme": "dark"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-    
-  </div>
-  <!-- TradingView Widget END -->
             </div>
+
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                {
+                    "symbol": "FX_IDC:GBPAED",
+                    "width": "100%",
+                    "isTransparent": false,
+                    "colorTheme": "dark",
+                    "locale": "en"
+                }
+                </script>
+            </div>
+
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                {
+                    "symbol": "FX_IDC:CADAED",
+                    "width": "100%",
+                    "isTransparent": false,
+                    "colorTheme": "dark",
+                    "locale": "en"
+                }
+                </script>
+            </div>
+
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                {
+                    "symbol": "FX:EURUSD",
+                    "width": "100%",
+                    "isTransparent": false,
+                    "colorTheme": "dark",
+                    "locale": "en"
+                }
+                </script>
+            </div>
+
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                {
+                    "interval": "1m",
+                    "width": "100%",
+                    "isTransparent": false,
+                    "height": 220,
+                    "symbol": "OANDA:XAUUSD",
+                    "showIntervalTabs": true,
+                    "displayMode": "single",
+                    "locale": "en",
+                    "colorTheme": "dark"
+                }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
         </div>
     </div>
-    
-        <!-- TradingView Gold Price Chart Widget -->
-        
 </body>
 </html>
