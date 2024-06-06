@@ -32,31 +32,18 @@
 
         .widget, .widget2 {
             padding: 10px;
-            flex: 1 1 100%;
             box-sizing: border-box;
-            border-radius: 10px; /* Adding border-radius */
-            background: rgba(0, 0, 0, 0.5); /* Adding semi-transparent background */
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.5);
             margin: 10px;
-            max-width: 100%; /* Ensuring widgets don't exceed container width */
-        }
-
-        @media (min-width: 768px) {
-            .widget {
-                flex: 1 1 48%;
-            }
-
-            .widget2 {
-                flex: 1 1 48%;
-            }
+            flex-basis: 48%; /* Setting a fixed width for widgets */
+            max-width: 48%;
         }
 
         @media (min-width: 1200px) {
-            .widget {
-                flex: 1 1 30%;
-            }
-
-            .widget2 {
-                flex: 1 1 30%;
+            .widget, .widget2 {
+                flex-basis: 30%;
+                max-width: 30%;
             }
         }
     </style>
