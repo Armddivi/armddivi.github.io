@@ -40,19 +40,25 @@
             max-width: 30%;
         }
 
-        @media (min-width: 1920px) {
-            .widget, .widget2 {
-                flex-basis: 23%;
-                max-width: 23%;
-            }
-        }
+        @media screen and (min-width: 1280px) and (max-width: 1920px) {
+    /* این قسمت برای صفحات با عرض بین 1280px و 1920px اعمال می‌شود */
+    .container {
+        max-width: 1200px; /* یک عدد مناسب برای عرض مورد نظر خود قرار دهید */
+    }
 
-        @media (max-width: 768px) {
-            .widget, .widget2 {
-                flex-basis: 100%;
-                max-width: 100%;
-            }
+    .widget, .widget2 {
+        flex-basis: 45%;
+        max-width: 45%;
+    }
+
+    @media (max-width: 768px) {
+        .widget, .widget2 {
+            flex-basis: 100%;
+            max-width: 100%;
         }
+    }
+}
+
     </style>
 </head>
 <body>
