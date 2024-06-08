@@ -6,7 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gold Price</title>
-   
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+        "symbols": [
+          {
+            "description": "",
+            "proName": "OANDA:XAUUSD"
+          },
+          {
+            "description": "",
+            "proName": "FX_IDC:EURAED"
+          },
+          {
+            "description": "",
+            "proName": "FX:EURUSD"
+          },
+          {
+            "description": "",
+            "proName": "FX_IDC:CADAED"
+          },
+          {
+            "description": "",
+            "proName": "FX_IDC:EURAED"
+          }
+        ],
+        "showSymbolLogo": true,
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "colorTheme": "dark",
+        "locale": "en"
+      }
+        </script>
 
         
         
@@ -72,28 +105,8 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- TradingView Market Ticker Widget -->
-        <div class="widget">
-          <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "950",
-  "height": "700",
-  "symbol": "OANDA:XAUUSD",
-  "interval": "D",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "allow_symbol_change": true,
-  "calendar": false,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
+    
+
 </div>
 <!-- TradingView Widget END -->
         </div>
