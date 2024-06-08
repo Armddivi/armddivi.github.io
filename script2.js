@@ -27,5 +27,5 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchGoldPrice();
 
     // Set an interval to fetch the gold price every 5 minutes (300000 milliseconds)
-    setInterval(fetchGoldPrice, 300000); // هر 5 دقیقه یک بار
+    
 });

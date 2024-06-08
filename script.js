@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const apiKey = 'goldapi-10i1gj19lwsz41sv-io'; // کلید API خود را جایگزین کنید
+    const apiKey = 'goldapi-ctgacislx5wzs93-io'; // کلید API خود را جایگزین کنید
     const apiUrl = `https://www.goldapi.io/api/XAU/USD`;
-    const api1='goldapi-10i1gj19lwsz41sv-io';
+    const api1='goldapi-ctgacislx5wzs93-io';
     const url1=`https://www.goldapi.io/api/XAU/USD`;
 
     async function fetchGoldPrice() {
@@ -48,5 +48,5 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchGoldPrice();
 
     // Set an interval to fetch the gold price every 5 minutes (300000 milliseconds)
-    setInterval(fetchGoldPrice, 300000); // هر 5 دقیقه یک بار
+    
 });
