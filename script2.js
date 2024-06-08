@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const api= 'goldapi-99r7usslx4lg6k3-io'; // کلید API خود را جایگزین کنید
+    const api= 'goldapi-10i1gj19lwsz41sv-io'; // کلید API خود را جایگزین کنید
     const url = `https://www.goldapi.io/api/XAU/AED`;
 
     async function fetchGoldPrice() {
