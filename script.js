@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const apiKey = 'goldapi-10i1gj19lwsz41sv-io'; // کلید API خود را جایگزین کنید
     const apiUrl = `https://www.goldapi.io/api/XAU/USD`;
-    const api1='goldapi-99r7usslx4lg6k3-io';
+    const api1='goldapi-10i1gj19lwsz41sv-io';
     const url1=`https://www.goldapi.io/api/XAU/USD`;
 
     async function fetchGoldPrice() {
