@@ -97,7 +97,7 @@ h1 {
 }
 
 table {
-    width: 100%;
+    width: 600px;
     max-width: 600px;
     border-collapse: collapse;
     background-color: rgba(0, 0, 0, 0.5);
@@ -193,16 +193,31 @@ th {
 }
 
 /* Media queries برای ریسپانسیو بودن */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    table {
+        width: 90%; /* تنظیم اندازه جدول بر اساس درصد در دستگاه‌های کوچک‌تر */
+    }
+
     th, td {
         padding: 10px;
-        font-size: 0.9em;
+        font-size: 1em; /* سایز نوشته در سلول‌ها در دستگاه‌های کوچک‌تر */
     }
+
     h1 {
-        font-size: 1.5em;
+        font-size: 2em; /* سایز نوشته عنوان در دستگاه‌های کوچک‌تر */
     }
 }
 
+@media (max-width: 500px) {
+    th, td {
+        padding: 8px;
+        font-size: 0.9em; /* سایز نوشته در سلول‌ها در دستگاه‌های بسیار کوچک */
+    }
+
+    h1 {
+        font-size: 1.5em; /* سایز نوشته عنوان در دستگاه‌های بسیار کوچک */
+    }
+}
 
 </style>
 </html>
